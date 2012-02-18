@@ -20,6 +20,9 @@
             }
 
             switch(action){
+              case "webdav_svn":
+                webdavSvnAction(request, sendResponse);
+                return;
               case "targetUrlList":
                 ret.target_url_list = gOptionValue.loadValue().added_url_list;
                 ret.ret = true;
@@ -46,6 +49,19 @@
 
         sendResponse(ret);
     });
+
+    var webdavSvnAction = function(request, callback){
+        var url = request.url
+        if (url.match(/^https?:\/\//)){
+            gDavSvn.log(url,
+                        request.startrev || "HEAD",
+                        request.endrev || 0,
+                        request.limit || 1,
+                        function(ret){
+                            callback(ret);
+                        });
+        }
+    };
 
     var extensionAction = function(url){
         if (!url){
