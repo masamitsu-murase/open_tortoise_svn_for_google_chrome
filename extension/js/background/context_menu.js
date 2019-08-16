@@ -66,17 +66,17 @@ if (!OpenTsvn) OpenTsvn = {};
 
         openRepobrowser(svn_url) {
             // async
-            return this[opener_sym].openRepobrowser(svn_url.url, (svn_url.p || svn_url.r));
+            return this[opener_sym].openRepobrowser(svn_url.url_without_parameters, (svn_url.p || svn_url.r));
         }
 
         openLog(svn_url) {
             // async
-            return this[opener_sym].openLog(svn_url.url, (svn_url.p || svn_url.r), null);
+            return this[opener_sym].openLog(svn_url.url_without_parameters, (svn_url.p || svn_url.r), null);
         }
 
         openBlame(svn_url) {
             // async
-            return this[opener_sym].openBlame(svn_url.url);
+            return this[opener_sym].openBlame(svn_url.url_without_parameters);
         }
 
         openBrowser(svn_url, tab) {
