@@ -24,6 +24,11 @@ if (!OpenTsvn) OpenTsvn = {};
             return this[url_sym].href;
         }
 
+        get url_without_parameters() {
+            var url = this[url_sym];
+            return url.protocol + "//" + url.host + url.pathname;
+        }
+
         get p() {
             return this.param("p");
         }
