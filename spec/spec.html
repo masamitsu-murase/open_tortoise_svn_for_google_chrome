@@ -45,46 +45,46 @@
 </head>
 
 <body>
-<article>
-<section>
-  <h1>Open TortoiseSVN テストページ</h1>
-  <section>
-    <h1>Spec</h1>
-    <dl>
-      <dt><a href="./js/common/spec.html">Common</a></dt>
-      <dd><iframe src="./js/common/spec.html"></iframe></dd>
-      <dt><a href="./js/background/spec.html">Background</a></dt>
-      <dd><iframe src="./js/background/spec.html"></iframe></dd>
-      <dt><a href="./js/content_script/spec.html">Content Script</a></dt>
-      <dd><iframe src="./js/content_script/spec.html"></iframe></dd>
-    </dl>
-  </section>
-
-  <section>
-    <h1>Example</h1>
-
+  <article>
     <section>
-      <h1>Prepare</h1>
-      <ol>
-        <li>Set &quot;Path to TortoiseProc.exe&quot;.</li>
+      <h1>Open TortoiseSVN テストページ</h1>
+      <section>
+        <h1>Spec</h1>
+        <dl>
+          <dt><a href="./js/common/spec.html">Common</a></dt>
+          <dd><iframe src="./js/common/spec.html"></iframe></dd>
+          <dt><a href="./js/background/spec.html">Background</a></dt>
+          <dd><iframe src="./js/background/spec.html"></iframe></dd>
+          <dt><a href="./js/content_script/spec.html">Content Script</a></dt>
+          <dd><iframe src="./js/content_script/spec.html"></iframe></dd>
+        </dl>
+      </section>
+
+      <section>
+        <h1>Example</h1>
+
+        <section>
+          <h1>Prepare</h1>
+          <ol>
+            <li>Set &quot;Path to TortoiseProc.exe&quot;.</li>
             <li>Add a URL
               &quot;<code>https://github.com/masamitsu-murase/open_tortoise_svn.git/branches/firefox_webextensions</code>&quot;.
             </li>
-        <li>Set default action to &quot;Repository Browser&quot;.</li>
-        <li>Add extension actions.
-          <ul>
-            <li>&quot;<code>*.md</code>&quot; as &quot;Log&quot;</li>
-            <li>&quot;<code>*.json, *.js</code>&quot; as &quot;Blame&quot;</li>
-                <li>&quot;<code>*.cpp</code>&quot; as &quot;Open in Firefox&quot;</li>
-          </ul>
-        </li>
-        <li>Check &quot;A help tip&quot;.</li>
-      </ol>
-    </section>
+            <li>Set default action to &quot;Repository Browser&quot;.</li>
+            <li>Add extension actions.
+              <ul>
+                <li>&quot;<code>*.md</code>&quot; as &quot;Log&quot;</li>
+                <li>&quot;<code>*.json, *.js</code>&quot; as &quot;Blame&quot;</li>
+                <li>&quot;<code>*.cpp</code>&quot; as &quot;Open in Google Chrome&quot;</li>
+              </ul>
+            </li>
+            <li>Check &quot;A help tip&quot;.</li>
+          </ol>
+        </section>
 
-    <section>
-      <h1>Check URL and extension action</h1>
-      <ul>
+        <section>
+          <h1>Check URL and extension action</h1>
+          <ul>
             <li><a
                 href="https://github.com/masamitsu-murase/open_tortoise_svn.git/branches/firefox_webextensions">/branches/firefox_webextensions</a>
             </li>
@@ -97,15 +97,15 @@
             <li><a
                 href="https://github.com/masamitsu-murase/open_tortoise_svn.git/branches/firefox_webextensions/native_messaging/open_tortoise_svn_host.cpp">/branches/firefox_webextensions/native_messaging/open_tortoise_svn_host.cpp</a>
             </li>
-      </ul>
-      <ul>
-        <li><a href="https://www.google.co.jp/">https://www.google.co.jp/</a></li>
-      </ul>
-    </section>
+          </ul>
+          <ul>
+            <li><a href="https://www.google.co.jp/">https://www.google.co.jp/</a></li>
+          </ul>
+        </section>
 
-    <section>
-      <h1>Check attribute</h1>
-      <ul>
+        <section>
+          <h1>Check attribute</h1>
+          <ul>
             <li><a href="https://github.com/masamitsu-murase/open_tortoise_svn.git/branches/firefox_webextensions"
                 data-tsvn-info="tsvn[log]">/branches/firefox_webextensions, tsvn[log]</a></li>
             <li><a href="https://github.com/masamitsu-murase/open_tortoise_svn.git/branches/firefox_webextensions"
@@ -133,11 +133,11 @@
                 data-tsvn-info="tsvn[log][171]">/branches/firefox_webextensions, tsvn[log][171]</a></li>
             <li><a href="https://github.com/masamitsu-murase/open_tortoise_svn.git/branches/firefox_webextensions?p=172"
                 data-tsvn-info="tsvn[log][172,170]">/branches/firefox_webextensions, tsvn[log][172,170]</a></li>
-      </ul>
+          </ul>
+        </section>
+      </section>
     </section>
-  </section>
-</section>
-</article>
+  </article>
 </body>
 
 </html>
