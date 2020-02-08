@@ -21,7 +21,7 @@ def create_file_content():
 
 def create_exe():
     cwd = Path(__file__).resolve().parent
-    pythonw_exe = str(Path(sys.executable).parent / "python.exe")
+    pythonw_exe = str(Path(sys.executable).parent / "pythonw.exe")
     command = [
         pythonw_exe, "-m", "exepy", "create", "-f", "copy_tsvn_tool.exe",
         "install.py", "file_content.py", "main.py"
