@@ -62,8 +62,7 @@
     "permissions": [
         "contextMenus",
         "nativeMessaging",
-        "storage",
-        "unlimitedStorage"
+        "storage"
     ],
     "web_accessible_resources": [
         "images/en/tooltip_repobrowser.svg",
