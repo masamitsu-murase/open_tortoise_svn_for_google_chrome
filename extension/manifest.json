@@ -60,7 +60,6 @@
         "chrome_style": true
     },
     "permissions": [
-        "tabs",
         "contextMenus",
         "nativeMessaging",
         "storage",
