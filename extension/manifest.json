@@ -51,11 +51,20 @@
         "storage"
     ],
     "web_accessible_resources": [
-        "images/en/tooltip_repobrowser.svg",
-        "images/en/tooltip_blame.svg",
-        "images/en/tooltip_log.svg",
-        "images/ja/tooltip_repobrowser.svg",
-        "images/ja/tooltip_blame.svg",
-        "images/ja/tooltip_log.svg"
+        {
+            "resources": [
+                "images/en/tooltip_repobrowser.svg",
+                "images/en/tooltip_blame.svg",
+                "images/en/tooltip_log.svg",
+                "images/ja/tooltip_repobrowser.svg",
+                "images/ja/tooltip_blame.svg",
+                "images/ja/tooltip_log.svg"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*",
+                "file://*/*"
+            ]
+        }
     ]
 }
