@@ -42,7 +42,7 @@ if (!OpenTsvn) OpenTsvn = {};
 
     new ctx.MessageReceiver([ opener, badge_manager ]);
 
-    chrome.browserAction.onClicked.addListener(function() {
+    chrome.action.onClicked.addListener(function() {
         badge_manager.showWarning(false);
         chrome.runtime.openOptionsPage();
     });
