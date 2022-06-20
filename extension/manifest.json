@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Open TortoiseSVN for Google Chrome™",
     "version": "2.2.1",
     "description": "Extension to open a file directly in TortoiseSVN instead of in the browser.",
@@ -10,20 +10,7 @@
     },
     "default_locale": "en",
     "background": {
-        "scripts": [
-            "js/common/misc.js",
-            "js/common/action_matcher.js",
-            "js/common/misc_settings.js",
-            "js/common/error.js",
-            "js/common/data_migrator.js",
-            "js/common/svn_url.js",
-            "js/background/badge_manager.js",
-            "js/background/context_menu.js",
-            "js/background/message_receiver.js",
-            "js/background/tortoise_svn_opener.js",
-            "js/background/background.js"
-        ],
-        "persistent": false
+        "service_worker": "js/background/background.js"
     },
     "browser_action": {
         "default_icon": "icons/icon32.png",
