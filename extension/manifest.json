@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Open TortoiseSVN for Google Chrome™",
     "version": "2.2.1",
     "description": "Extension to open a file directly in TortoiseSVN instead of in the browser.",
@@ -10,22 +10,9 @@
     },
     "default_locale": "en",
     "background": {
-        "scripts": [
-            "js/common/misc.js",
-            "js/common/action_matcher.js",
-            "js/common/misc_settings.js",
-            "js/common/error.js",
-            "js/common/data_migrator.js",
-            "js/common/svn_url.js",
-            "js/background/badge_manager.js",
-            "js/background/context_menu.js",
-            "js/background/message_receiver.js",
-            "js/background/tortoise_svn_opener.js",
-            "js/background/background.js"
-        ],
-        "persistent": false
+        "service_worker": "js/background/service_worker.js"
     },
-    "browser_action": {
+    "action": {
         "default_icon": "icons/icon32.png",
         "default_title": "Open TortoiseSVN"
     },
@@ -56,8 +43,7 @@
     ],
     "options_ui": {
         "page": "html/options.html",
-        "open_in_tab": true,
-        "chrome_style": true
+        "open_in_tab": true
     },
     "permissions": [
         "contextMenus",
@@ -65,11 +51,20 @@
         "storage"
     ],
     "web_accessible_resources": [
-        "images/en/tooltip_repobrowser.svg",
-        "images/en/tooltip_blame.svg",
-        "images/en/tooltip_log.svg",
-        "images/ja/tooltip_repobrowser.svg",
-        "images/ja/tooltip_blame.svg",
-        "images/ja/tooltip_log.svg"
+        {
+            "resources": [
+                "images/en/tooltip_repobrowser.svg",
+                "images/en/tooltip_blame.svg",
+                "images/en/tooltip_log.svg",
+                "images/ja/tooltip_repobrowser.svg",
+                "images/ja/tooltip_blame.svg",
+                "images/ja/tooltip_log.svg"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*",
+                "file://*/*"
+            ]
+        }
     ]
 }

@@ -17,9 +17,9 @@ if (!OpenTsvn) OpenTsvn = {};
         }
 
         setText(text, bg_color) {
-            chrome.browserAction.setBadgeText({ text: text });
+            chrome.action.setBadgeText({ text: text });
             if (bg_color) {
-                chrome.browserAction.setBadgeBackgroundColor({ color: bg_color });
+                chrome.action.setBadgeBackgroundColor({ color: bg_color });
             }
         }
     };

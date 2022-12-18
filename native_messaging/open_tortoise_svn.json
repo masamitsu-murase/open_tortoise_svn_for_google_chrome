@@ -4,7 +4,6 @@
     "path": "open_tortoise_svn_host.exe",
     "type": "stdio",
     "allowed_origins": [
-        "chrome-extension://mhhincgnohhopnakokkcoifmnahapihn/",
-        "chrome-extension://damilknpkhofkfgpelmjdcdgpdlnjfng/"
+        "chrome-extension://mhhincgnohhopnakokkcoifmnahapihn/"
     ]
 }
